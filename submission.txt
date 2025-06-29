@@ -1,0 +1,34 @@
+Cara Menjalankan Proyek ETL (Submission Guide)
+
+1. Buat Virtual Environment (venv)
+----------------------------------
+# Untuk Windows:
+python -m venv venv
+venv\Scripts\activate
+
+# Untuk macOS/Linux:
+python3 -m venv venv
+source venv/bin/activate
+
+2. Install Dependencies
+-----------------------
+# Setelah environment aktif, install semua dependensi:
+pip install -r requirements.txt
+
+3. Jalankan ETL Script
+----------------------
+# Jalankan script utama untuk mengeksekusi proses ETL:
+python main.py
+
+4. Menjalankan Unit Test
+------------------------
+# Jalankan semua test:
+pytest tests
+
+# Jika ingin mengecek coverage:
+coverage run -m pytest
+coverage report
+
+
+# URL Google Sheets:
+https://docs.google.com/spreadsheets/d/1UtSLOn2BDwMQGs1tzL7oh0huDaXRYCEs1X0BTwh543Q/edit?usp=sharing
